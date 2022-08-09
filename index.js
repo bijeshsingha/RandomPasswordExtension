@@ -81,12 +81,12 @@ let generateRandPass = function() {
     passEl2.textContent = pass2
 }
 
-passEl1.onclick = function() {
+passEl1.addEventListener("click" , function() {
     copy(passEl1.textContent)
-}
-passEl2.onclick = function() {
+})
+passEl2.addEventListener("click" , function() {
     copy(passEl2.textContent)
-}
+})
 
-document.getElementById("generateP-el").onclick = generateRandPass;
+document.getElementById("generateP-el").addEventListener("click" , generateRandPass)
 
